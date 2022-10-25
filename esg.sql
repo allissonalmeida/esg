@@ -307,41 +307,6 @@ INSERT INTO `plataformas` (`id`, `nome`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `produtos`
---
-
-CREATE TABLE `produtos` (
-  `id` int(11) NOT NULL,
-  `codigo` varchar(50) NOT NULL,
-  `nome` varchar(50) NOT NULL,
-  `descricao` varchar(150) DEFAULT NULL,
-  `estoque` int(11) NOT NULL,
-  `valor_compra` decimal(10,2) NOT NULL,
-  `valor_venda` decimal(10,2) NOT NULL,
-  `fornecedor` int(11) NOT NULL,
-  `categoria` int(11) NOT NULL,
-  `foto` varchar(150) DEFAULT NULL,
-  `ativo` varchar(5) NOT NULL,
-  `lucro` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `produtos`
---
-
-INSERT INTO `produtos` (`id`, `codigo`, `nome`, `descricao`, `estoque`, `valor_compra`, `valor_venda`, `fornecedor`, `categoria`, `foto`, `ativo`, `lucro`) VALUES
-(6, '123', 'Bermuda Jeans', 'Bermuda xxxxxxxx', 0, '0.00', '69.99', 0, 2, '14-04-2021-13-19-01-bermuda.jpg', 'Sim', NULL),
-(7, '12345', 'Sapato Social', 'Sapato Social de Couro', 14, '100.00', '150.00', 3, 1, '14-04-2021-13-19-18-cat-6.jpg', 'Sim', 50),
-(10, '0236', 'Camisa Polo', 'Camisa Polo Diversos Tamanhos', 125, '25.00', '49.99', 1, 8, '14-04-2021-13-20-29-camisa-masc.jpg', 'Sim', NULL),
-(11, '589222', 'Calça Masculina', 'Calça Masculina Jeans', 33, '120.00', '192.00', 3, 3, '14-04-2021-13-21-06-calca-masc.jpg', 'Sim', 60),
-(12, '4586223', 'Camisa Feminina', 'Camisa Feminina ', 40, '89.99', '134.99', 3, 8, '14-04-2021-13-24-18-camisa-femin.jpg', 'Sim', 50),
-(13, '58555', 'Regata Masculina', 'Camiseta Regata Masculina', 27, '5.00', '50.00', 1, 9, '14-04-2021-13-27-09-regata-masculina.jpg', 'Sim', NULL),
-(14, '5855589', 'Regata Feminina', 'Camiseta Feminina', 33, '50.00', '75.00', 1, 9, '14-04-2021-13-28-27-regata-feminina.jpg', 'Sim', 50),
-(15, '688955566', 'Sapato Feminino', 'Sapato', 112, '50.00', '210.00', 4, 1, '14-04-2021-13-29-25-sapato-feminino.jpg', 'Sim', 40);
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `projetos`
 --
 
@@ -414,11 +379,7 @@ CREATE TABLE `usuarios` (
 INSERT INTO `usuarios` (`id`, `nome`, `email`, `senha`, `nivel`) VALUES
 (1, 'ALLISSON JORGE SILVA ALMEIDA', 'allisson.almeida@equatorialenergia.com.br', '123', 'Administrador'),
 (2, 'JANES VALDO RODRIGUES LIMA', 'janes.lima@equatorialenergia.com.br', '123', 'Administrador'),
-(3, 'USUARIO TESTE', 'usuario.teste@equatorialenergia.com.br', '123', 'Administrador'),
-(5, 'LUIS EMILIO SOUSA EUGENIO FIGUEIREDO', 'emilio.filho@equatorialenergia.com.br', '123', 'Administrador'),
-(6, 'JULIO CESAR MENDES', 'julio.mendes@equatorialenergia.com.br', '123', 'Administrador'),
-(7, 'DAYANE DE MATOS PEREIRA', 'dayane.pereira@equatorialenergia.com.br', '123', 'Administrador'),
-(8, 'EDMILSON DE LIMA SANTOS', 'edmilson.santos@equatorialenergia.com.br', '123', 'Administrador');
+(3, 'USUARIO TESTE', 'usuario.teste@equatorialenergia.com.br', '123', 'Administrador');
 
 --
 -- Indexes for dumped tables
