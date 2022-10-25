@@ -52,7 +52,7 @@ if(@$_GET['pag'] == ""){
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="Hugo Vasconcelos">
+    <meta name="author" content="Allisson Almeida">
 	<title><?php echo $nome_sistema ?></title>
 
 	<link href="../img/logo.ico" rel="shortcut icon" type="image/x-icon">

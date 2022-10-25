@@ -10,8 +10,8 @@ $nome_admin = 'Allisson Almeida';
 //DADOS PARA O BANCO DADOS LOCAL
 $servidor = 'localhost';
 $usuario = 'root';
-$senha = '';
-$banco = 'projeto1';
+$senha = 'root';
+$banco = 'esg';
 
 
 /*
